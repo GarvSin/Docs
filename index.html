@@ -6,7 +6,7 @@
 </head>
 
 <body>
-  <h1>HTML CALCULATOR</h1>
+  <h1>CALCULATOR</h1>
   <div class="calc-parent">
     <div class="row">
       <div class="column" id="calc-display-val">0</div>
@@ -97,7 +97,7 @@
           evalStringArray.push('-');
           break;
 
-        case '*':
+        case 'x':
           pendingVal = displayVal;
           displayVal = '0';
           displayValElement.innerText = displayVal;
@@ -130,7 +130,7 @@
       calcNumBtns[i].addEventListener('click', updateDisplayVal, false);
     }
 
-    for (let i = 0; i < calcOperatorBtns; i++) {
+    for (let i = 0; i < calcOperatorBtns.length; i++) {
       calcOperatorBtns[i].addEventListener('click', performOperation, false);
     }
 
