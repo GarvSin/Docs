@@ -1,5 +1,5 @@
 <html>
-
+<!-- Adding the comment to check the check in to Github -->
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="js/jsScripts.js"></script>
@@ -120,7 +120,7 @@
           displayValElement.innerText = displayVal;
           evalStringArray = [];
           break;
-          
+
         default:
           break;
       }
@@ -144,7 +144,7 @@
      backspace.onclick = () => {
        let lengthOfDisplay = displayVal.length;
        displayVal = displayVal.slice(0, lengthOfDisplay - 1);
-       
+
        if(displayVal == '')
        displayVal = '0';
 
@@ -154,7 +154,7 @@
      decimalBtn.onclick = () => {
        if(!displayVal.includes('.'))
        displayVal +='.';
-       displayValElement.innerText = displayVal; 
+       displayValElement.innerText = displayVal;
      }
   </script>
 </body>
